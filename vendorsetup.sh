@@ -6,13 +6,13 @@ rm -rf packages/apps/ParanoidGlyph
 
 echo 'Cloning Vendor tree [1/5]'
 # vendor/nothing/Pong
-git clone https://gitlab.com/AgBKartikey/vendor_nothing_Pong.git -b UDC vendor/nothing/Pong
+git clone  https://gitea.com/dhruvesh17/vendor_nothing_Pong.git -b 14 vendor/nothing/Pong
 
 echo 'DONE'
 
 echo 'Cloning Kernel tree [2/5]'
 # kernel/nothing/sm8475
-git clone --depth=1 https://github.com/AgBKartikey/kernel_nothing_sm8475.git -b inline kernel/nothing/sm8475 && cd kernel/nothing/sm8475 && git submodule init && git submodule update --remote && cd ../../..
+git clone https://github.com/Dhruvesh16/kernel_nothing_sm8475.git -b rebase-2 kernel/nothing/sm8475
 
 echo 'DONE'
 
