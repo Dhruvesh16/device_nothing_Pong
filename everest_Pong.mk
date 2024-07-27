@@ -12,13 +12,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nothing/Pong/device.mk)
 
 # Inherit some common ROM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+
+# Inherit some common Everest stuff
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_USES_DOLBY := true
+
+
+# Official-ify
+EVEREST_BUILD_TYPE := OFFICIAL
+EVEREST_MAINTAINER := Dhruvesh
+
 
 # Bootanimation Resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_Pong
+PRODUCT_NAME := everest_Pong
 PRODUCT_DEVICE := Pong
 PRODUCT_MANUFACTURER := nothing
 PRODUCT_BRAND := Nothing
@@ -40,8 +53,3 @@ BUILD_FINGERPRINT := Nothing/Pong/Pong:12/SKQ1.230722.001/2406280430:user/releas
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
-
-# Flags
-TARGET_HAS_UDFPS := true
-TARGET_ENABLE_BLUR := true
-TARGET_USES_DOLBY := true
