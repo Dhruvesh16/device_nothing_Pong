@@ -14,6 +14,13 @@ $(call inherit-product, device/nothing/Pong/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
+
+# Inherit some common DerpFest stuff
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Official-ify
+DERP_BUILDTYPE := Official
+
 PRODUCT_NAME := derp_Pong
 PRODUCT_DEVICE := Pong
 PRODUCT_MANUFACTURER := nothing
