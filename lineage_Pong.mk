@@ -15,11 +15,15 @@ $(call inherit-product, device/nothing/Pong/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 
-# Inherit some common DerpFest stuff
+# Inherit some common Everest stuff
 EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
 # Official-ify
-DERP_BUILDTYPE := Official
+EVEREST_BUILD_TYPE := OFFICIAL
+EVEREST_MAINTAINER := Dhruvesh
 
 PRODUCT_NAME := lineage_Pong
 PRODUCT_DEVICE := Pong
