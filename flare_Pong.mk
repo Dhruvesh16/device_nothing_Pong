@@ -15,8 +15,8 @@ $(call inherit-product, device/nothing/Pong/device.mk)
 $(call inherit-product, vendor/flare/config/common_full_phone.mk)
 
 # Official-ify
-EVEREST_BUILD_TYPE := OFFICIAL
-EVEREST_MAINTAINER := Dhruvesh
+FLARE_BUILD_TYPE := OFFICIAL
+FLARE_MAINTAINER := Dhruvesh
 
 PRODUCT_NAME := flare_Pong
 PRODUCT_DEVICE := Pong
