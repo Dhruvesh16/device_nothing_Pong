@@ -16,3 +16,5 @@ cd ../../../..
 
 git clone --depth=1 https://github.com/HELLBOY017/kernel_nothing_sm8475.git -b inline-2 kernel/nothing/sm8475 && cd kernel/nothing/sm8475 && git submodule init && git submodule update --remote && cd ../../..
 git clone https://gitea.com/dhruvesh17/vendor_nothing_Pong.git vendor/nothing/Pong
+
+git clone https://gitlab.com/kei-space/clang/r487747c.git -b master prebuilts/clang/host/linux-x86/clang-r487747c --depth=1
