@@ -15,4 +15,7 @@ git cherry-pick e63f86c2e43b021f34a1258e068964e72a91c395
 cd ../../../..
 
 git clone --depth=1 https://github.com/HELLBOY017/kernel_nothing_sm8475.git -b inline-2 kernel/nothing/sm8475 && cd kernel/nothing/sm8475 && git submodule init && git submodule update --remote && cd ../../..
+
 git clone https://gitea.com/dhruvesh17/vendor_nothing_Pong.git vendor/nothing/Pong
+
+git clone https://github.com/FlamingoOS-Devices/hardware_dolby.git hardware/dolby
