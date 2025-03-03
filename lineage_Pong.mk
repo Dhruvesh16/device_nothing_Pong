@@ -12,20 +12,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nothing/Pong/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 
-# Inherit some common Everest stuff
+# Inherit some common Elixir stuff
+TARGET_USES_AOSP_RECOVERY := true
+WITH_GMS := true
+FORCE_LAWNCHAIR := true
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_HAS_UDFPS := true
-WITH_GAPPS := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
 # Official-ify
-EVEREST_BUILD_TYPE := OFFICIAL
-EVEREST_MAINTAINER := Dhruvesh
+ELIXIR_BUILD_TYPE := OFFICIAL
+BUILD_USERNAME := Dhruvesh
+BUILD_HOSTNAME := Elixir
 
-PRODUCT_NAME := derp_Pong
+PRODUCT_NAME := lineage_Pong
 PRODUCT_DEVICE := Pong
 PRODUCT_MANUFACTURER := nothing
 PRODUCT_BRAND := Nothing
